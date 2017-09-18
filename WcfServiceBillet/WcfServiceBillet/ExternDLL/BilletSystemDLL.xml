@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BilletSystemDLL</name>
+    </assembly>
+    <members>
+        <member name="M:BilletSystemDLL.Bil.#ctor(System.String,System.DateTime,System.Boolean,System.String)">
+            <summary>
+            Bil klassen arver fra base-klassen Vehicle.
+            indeholder en Pris()- og ToString-metode.
+            </summary>
+            <param name="nummerplade"></param>
+            <param name="dato"></param>
+            <param name="harBrobizz"></param>
+            <param name="hvilkenBro"></param>
+        </member>
+        <member name="M:BilletSystemDLL.ITure.Pris">
+            <summary>
+            Dette interface samler alle priser uanset typen af køretøj.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:BilletSystemDLL.Kunde.AlleTure">
+            <summary>
+            Denne klasse håndterer en liste af alle ture over hhv. Storebælt og Øresundsbroen.
+            </summary>
+        </member>
+        <member name="M:BilletSystemDLL.MC.#ctor(System.String,System.DateTime,System.Boolean,System.String)">
+            <summary>
+            MC klassen arver fra base klassen Vehicle.
+            indeholder en Pris()- og ToString-metode.
+            </summary>
+            <param name="nummerplade"></param>
+            <param name="dato"></param>
+            <param name="harBrobizz"></param>
+            <param name="hvilkenBro"></param>
+        </member>
+        <member name="P:BilletSystemDLL.Vehicle.Nummerplade">
+            <summary>
+            Dette er base klassen for alle køretøjer.
+            i constructor tjekker vi om nummerpladen indeholder
+            præcis 7, hvis ikke smider den en Exception.
+            </summary>
+        </member>
+    </members>
+</doc>
