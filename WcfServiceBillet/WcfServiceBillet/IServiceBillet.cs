@@ -12,6 +12,10 @@ namespace WcfServiceBillet
     [ServiceContract]
     public interface IServiceBillet
     {
+        /// <summary>
+        /// Bil priser
+        /// </summary>
+        /// <returns></returns>
         [OperationContract]
         int GetBilPrisØresund();
 
@@ -24,11 +28,30 @@ namespace WcfServiceBillet
         [OperationContract]
         int GetBilPrisStorebæltBroBizz();
 
-        [OperationContract]
-        string GetData(int value);
-
+        /// <summary>
+        /// MC priser
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         [OperationContract]
         int GetMCPrisØresund();
+
+        [OperationContract]
+        int GetMCPrisØresundBroBizz();
+
+        [OperationContract]
+        int GetMCPrisStorebælt();
+
+        [OperationContract]
+        int GetMCPrisStorebæltBroBizz();
+
+        /// <summary>
+        /// Default methods
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        [OperationContract]
+        string GetData(int value);
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
